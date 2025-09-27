@@ -60,6 +60,6 @@ Explain how your feature would enhance Bible study or user experience
 ## How to Contribute
 - Submit feature requests
 - Improve UI/UX by contributing to our [Figma design](https://www.figma.com/design/YkxRSzcw0gQNxfbuS8b76x/Bible-Research-MVP?node-id=0-1&p=f&t=UCnFMQqZqRuCmFX5-0)
-- Enhance the backend by working on this [Django project](https://github.com/Ted-Rose/bible-research)
+- Enhance the backend by working on this [Django project](https://github.com/Bible-Research/bible-research)
 - Develop the frontend through the [React project](https://github.com/realvincentuche/reactive-bible)
 - Contact: Message me on [LinkedIn](https://www.linkedin.com/in/tedis-rozenfelds-197239117/) or email tedis.rozenfelds@gmail.com
