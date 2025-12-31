@@ -1,8 +1,6 @@
 # Bible Study Companion: A Modern Bible App Created for You
 
-See a working prototype (MVP) here:
-
-https://reactive-bible-ate24q9a3-vincent-uches-projects.vercel.app
+Visit & use the app here: https://bibleresearch.vercel.app
 
 ## Why another Bible app?
 
@@ -19,7 +17,7 @@ A platform where users can share their Bible notes or collections with specific 
 Enhances evangelism and mentoring by allowing users to share specific verses with others while providing access to complete chapters for context.
 
 #### Current state:
-🟢 Implemented in API. See shared notes example filtered by a user defined tag: https://bible-research.vercel.app/api/v1/notes/?tag_id=TAGA2BE0AE324014D5
+🟢 Implemented in API. See shared notes example filtered by a user defined tag: https://bibleresearchapi.vercel.app/api/v1/notes/?tag_id=TAGA2BE0AE324014D5
 
 🟠 Still has to be implemented on Front-end side
 <br>
@@ -32,7 +30,7 @@ The ability to select specific verses and listen to them repeatedly.
 Useful for verse memorization (e.g. while driving a car).
 
 #### Current state:
-🟢 Current version supports audio Bible via UI. See it [here](https://reactive-bible-ate24q9a3-vincent-uches-projects.vercel.app)
+🟢 Current version supports audio Bible via UI. See it [here](https://bibleresearch.vercel.app)
 
 🟠 Work still has to be done on Front-end side and slightly on Back-end
 <br>
@@ -46,7 +44,7 @@ Useful for verse memorization (e.g. while driving a car).
 Research specific words or topic in Bible a lot easier.
 
 #### Current state:
-🟢 Current version supports search feature via UI. See it [here](https://reactive-bible-ate24q9a3-vincent-uches-projects.vercel.app)
+🟢 Current version supports search feature via UI. See it [here](https://bibleresearch.vercel.app)
 
 🟠 Work still has to be done on Front-end and Back-end side.
 <br>
@@ -71,7 +69,7 @@ Functionality to export all personal notes to external formats.
 Provides freedom and flexibility by allowing users to continue their Bible study using other tools (such as Excel or Word).
 
 #### Current state:
-🟢 As seen in shareable notes [example](https://bible-research.vercel.app/api/v1/notes/?tag_id=TAGA2BE0AE324014D5) users can access their notes in a JSON format which enables developers to export their notes.
+🟢 As seen in shareable notes [example](https://bibleresearchapi.vercel.app/api/v1/notes/?tag_id=TAGA2BE0AE324014D5) users can access their notes in a JSON format which enables developers to export their notes.
 
 🟠 Support non-tech users to export their notes to other platforms, Google Sheets for example.
 <br>
@@ -93,7 +91,7 @@ Explain how your feature would enhance Bible study or user experience
 
 ## Technology Stack
 - #### Backend: Python Django framework https://github.com/Bible-Research/bible-research
-- #### Frontend: React JS https://github.com/realvincentuche/reactive-bible
+- #### Frontend: React JS https://github.com/Bible-Research/reactive-bible
 
 ## How to Contribute
 Let's figure that out by getting in touch via [LinkedIn](https://www.linkedin.com/in/tedis-rozenfelds-197239117/) or email tedis.rozenfelds@gmail.com.
