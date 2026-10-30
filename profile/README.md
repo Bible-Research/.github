@@ -1,128 +1,99 @@
-# Bible Study Companion: A Modern Bible App Created for You
+# Bible Study Companion — a modern Bible app you can use today
 
-Visit & use the app here: https://bibleresearch.vercel.app
+**Use the app:** <https://bibleresearch.vercel.app>
+**Android APK:** <https://github.com/Bible-Research/reactive-bible/releases>
+**API docs:** <https://bible-research-489314.ey.r.appspot.com/api/v1/docs/>
 
-## Why another Bible app?
+Bible Study Companion is a free, open-source Bible reading and study
+app — multiple translations, synced audio, personal notes and public
+discussion — built by volunteers who wanted a study tool that fits the
+way people actually study scripture.
 
-We like other Bible apps, but they won't fit as good as our own Bible app does. See below some of the features we have or are planning to add to our Bible app:
+## What we've built
 
-## List Features
+### 🗒️🫂 Notes you can organize and share
 
-### 🗒️🫂 Shareable Public Notes
+Write rich-text notes anchored to any verses, organize them in a
+hierarchical tag tree, and flip notes or whole tag collections public
+with one switch. Public notes get shareable links that anyone can read
+— no account needed — with the full chapter one tap away for context.
+See a shared collection live:
+<https://bibleresearch.vercel.app/notes/tag/TAGA2BE0AE324014D5>
 
-#### What is it?
+*Still to come:* note markers inline while reading a chapter, and
+management/revocation of shared links.
 
-A platform where users can share their Bible notes or collections with specific verses and commentary.
+### 🔈🔁 Audio that follows along
 
-#### Why it matters:
+Listen to chapters in several translations — including ESV, NIV and a
+Latvian text-to-speech voice — with verse-by-verse highlighting as the
+audio plays, automatic chapter advance, and lock-screen controls. A
+loop toggle repeats the current chapter, and verse-range looping
+already works through search-result and note playlists — handy for
+memorization on the go.
 
-Enhances evangelism and mentoring by allowing users to share specific verses with others while providing access to complete chapters for context.
+*Still to come:* selecting verses in the reader and looping them
+directly, and playback-speed controls.
 
-#### Current state:
-🟢 Implemented in API. See shared notes example filtered by a user defined tag: https://bibleresearchapi.vercel.app/api/v1/notes/?tag_id=TAGA2BE0AE324014D5
+### 🔍 Search
 
-🟠 Still has to be implemented on Front-end side
-<br>
-<br>
+Full-text search of the active translation, results grouped by book
+with one-tap navigation to each verse — and each result can be played
+or added to a note straight from the list. Press `/` anywhere to jump
+to search.
 
-### 🔈🔁 Audio Loop Feature
+*Still to come:* excluding keywords, approximate and semantic search
+("fire" also finding "flame"), and book/testament filters in the UI
+(the API already supports them).
 
-#### What is it?
+### 💬 Discussion around scripture
 
-The ability to select specific verses and listen to them repeatedly.
+Every public note is a conversation space: nested comment threads with
+rich text and image attachments, readable by anyone and moderated by
+note authors. Typing `@` inserts a scripture reference (like
+`@JHN.3.16`) that links the passage directly into the discussion.
 
-#### Why it matters:
+*Still to come:* private groups and group-restricted threads,
+verse-anchored commentary inside the reader, @user mentions, and
+notifications.
 
-Useful for verse memorization (e.g. while driving a car).
+### 💻📱 Cross-platform, synced
 
-#### Current state:
+One account, every device: a responsive web app on desktop and mobile,
+plus an Android app (sideload the APK from our releases page — it
+self-updates and keeps audio playing with the screen off). Your notes,
+tags, comments and even your reading position sync automatically —
+pick up on your phone exactly where you left off on your laptop.
 
-🟢 Current version supports looping entire chapters audio. See it [here](https://bibleresearch.vercel.app)
+*Still to come:* Play Store and iOS releases, offline mode, and
+social login.
 
-🟠 Work still has to be done to implement narrowing down the looping to only user selected verses.
-<br>
-<br>
+### 📓 Your notes are yours
 
-### 🔍 Advanced Search Capabilities
+Every note is accessible as structured JSON through our open API
+(docs linked above), so your study data is never locked in.
 
-#### What is it?
+*Still to come:* one-click export for non-technical users (CSV,
+Google Sheets, Word) and print-friendly views.
 
-- Exclude specific keywords from search results
-- Support for exact text matching, approximate matching, and semantic search (e.g., searching for "fire" would also return results containing "flame")
+## Technology stack
 
-#### Why it matters:
+- **Frontend:** React + TypeScript + Vite, Capacitor for Android —
+  <https://github.com/Bible-Research/reactive-bible>
+- **Backend:** Python Django REST API on Google Cloud —
+  <https://github.com/Bible-Research/bible_research>
 
-Research specific words or topic in Bible a lot easier.
+## Contribute — developers and non-developers alike
 
-#### Current state:
+**Have an idea or a feature request?** You don't need to write code to
+shape this app. Tell us what would help your Bible study in
+[GitHub Discussions][discussions], or reach out on
+[LinkedIn](https://www.linkedin.com/in/tedis-rozenfelds-197239117/) /
+[tedis.rozenfelds@gmail.com](mailto:tedis.rozenfelds@gmail.com).
 
-🟢 Current version supports search feature via UI. See it [here](https://bibleresearch.vercel.app)
+**Want to build it?** UX designers, front-end and back-end developers
+are all needed — browse the open issues in either repo (look for
+`good first issue`), or get in touch and we'll find you a starting
+point.
 
-🟠 Work still has to be done on Front-end and Back-end side.
-<br>
-<br>
-
-### 💬 Community Discussion Features
-
-#### What is it?
-
-Spaces for both public and private group discussions about scripture. Public notes are visible to everyone with commenting options, while private notes can be restricted to specific groups or individuals.
-
-#### Why it matters:
-
-- Centers conversations around scripture
-- Allows users to easily access community commentary while reading the Bible
-
-#### Current state:
-
-🔴 Not started.
-<br>
-<br>
-
-### 📓 Exportable Notes
-
-#### What is it?
-
-Functionality to export all personal notes to external formats.
-
-#### Why it matters:
-
-Provides freedom and flexibility by allowing users to continue their Bible study using other tools (such as Excel or Word).
-
-#### Current state:
-
-🟢 As seen in shareable notes [example](https://bibleresearchapi.vercel.app/api/v1/notes/?tag_id=TAGA2BE0AE324014D5) users can access their notes in a JSON format which enables tech savy users to export their notes.
-
-🟠 Support non-tech users to export their notes to other platforms, Google Sheets for example.
-<br>
-<br>
-
-### 💻📱 Cross-Platform Access
-
-#### What is it?
-
-Seamless availability of notes across mobile and desktop devices.
-
-#### Why it matters:
-
-Many users prefer conducting in-depth Bible research on desktop platforms, a feature not universally supported by existing Bible apps.
-<br>
-<br>
-
-### 📩 Your Feature Ideas are Welcome
-
-#### What is it?
-
-A brief description of your proposed feature
-
-#### Why it matters:
-
-Explain how your feature would enhance Bible study or user experience
-
-## Technology Stack
-- #### Backend: Python Django framework https://github.com/Bible-Research/bible-research
-- #### Frontend: React JS https://github.com/Bible-Research/reactive-bible
-
-## How to Contribute
-Let's figure that out by getting in touch via [LinkedIn](https://www.linkedin.com/in/tedis-rozenfelds-197239117/) or email tedis.rozenfelds@gmail.com.
-UX designers, Front-end and Back-end developers are needed.
+[discussions]: https://github.com/Bible-Research/reactive-bible/discussions
